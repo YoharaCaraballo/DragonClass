@@ -1,0 +1,81 @@
+public class Dragon {
+  //Make the variables private because only 'Dragon' can reach to it and 'DragonDriver' does not copy it.
+  private boolean horns;
+  private String name;
+  private int heigth;
+  private boolean tail;
+  private String color;
+//What does it equal? Consider constructor because it creates objects
+    public Dragon(){
+      horns = true;
+      name= "Yoli";
+      heigth = 100;
+      tail = true; 
+      color = "Green";
+      
+    }  
+   //Make them equal to each other like: // Consider constructor because it creates object
+      public Dragon( boolean isHorns, String isName, int isHeigth, boolean haveTail, String isColor){
+      horns = isHorns;
+      name= isName;
+      heigth = isHeigth;
+      tail = haveTail;
+      color = isColor;
+      
+    }
+      //Accessor, How many horns?
+      public boolean getHorns(){
+     return horns;
+
+    }
+    //Accessor, Whats it's name?  
+    public String getName(){
+     return name;
+
+    }   
+        //Accessor, What's it's heigth? 
+    public int getHeigth(){
+     return heigth;
+
+    }    
+         //Accessor, Does the dragon have a tail? 
+    public boolean getTail(){
+     return tail;
+
+    }  
+        //Accessor, What's the dragons color? 
+    public String getColor(){
+     return color;
+
+    }
+    //Make a toString methiod that returns all of the values
+    public String toString(){
+      //It returns the number of horns, in this case 0(zero)
+      if ( horns== false){
+        return " Horns: 0 horns"  + "\n Name: " + name +" \n Heigth: " + heigth +" \n Tail: " + tail+ "\n Color: " + color; 
+     
+      }
+      
+     return " Horns: " + horns+ "\n Name: " + name +" \n Heigth: " + heigth +" \n Tail: " + tail+ "\n Color: " + color; 
+
+}
+    //Mutator for heigth
+    public void growHeigth(){
+     if ( tail== false){
+       heigth = heigth + 50;
+       
+     }
+     
+
+    }
+    //Mutator for tail
+        public void growTail(){
+     if ( horns== true){
+       tail = true;
+       
+     }
+     
+
+    }
+    
+}
