@@ -3,30 +3,30 @@ import java.util.*;
 import java.io.*;
 import static java.lang.System.*;
 import java.lang.Math;
-
-
+//import java.util.ArrayList<java.lang.Object>;
 public class DragonDriver {
   
   public static void main(String [] args){
      System.out.println(" Let's Make a Dragon");
-     
-     ArrayList dragon1 = new ArrayList();
+        
+     ArrayList <Object> dragon1 = new <Object> ArrayList();
    Dragon number1 = new Dragon();
    Dragon number2 = new Dragon(false, "Mark", 99, true, "Red");
    Dragon number3 = new Dragon(true, "Anthony", 6, false, "Blue");
    Dragon  number4 = new Dragon(true, "Corey", 55, false, "Orange");
-   
+      //This is the Array List...    
    dragon1.add(number1);
    dragon1.add(number2);
    dragon1.add(number3);
    dragon1.add(number4);
 
-   
+   //This is where the toString is called...
     System.out.println(number4.toString());
       System.out.println(" Congratulations, Your Dragon Has Been Completed.\n");
       System.out.println(" Let's see if there were any changes...");
-    //It increases the heigth of dragon3 "Anthony"
-      
+    
+//It increases the heigth of dragon3 "Anthony"
+//It gets a tail for dragon4 "Corey" 
     number3.growHeigth();
     number4.growTail();
     System.out.println();
